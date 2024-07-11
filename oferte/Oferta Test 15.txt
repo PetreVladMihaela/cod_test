@@ -1,0 +1,200 @@
+<s>[INST] Îmi puteți descrie cum este structurat fluxul de lucru al activității dvs. de la momentul în care contactați un client până la livrarea produsului sau serviciului?
+
+Logare Pacient:
+
+Dezvoltați o interfață de autentificare securizată pentru pacienți.
+Colectați și validați informațiile de autentificare ale pacientului, cum ar fi numele de utilizator și parola.
+Implementați măsuri de securitate, cum ar fi criptarea parolelor.
+După autentificare, redirecționați utilizatorul către panoul principal al aplicației.
+Trimiterea Email/Mesaj cu Statusul Analizelor:
+
+Implementați un sistem de programare pentru analize medicale pentru pacienți.
+La momentul potrivit, trimiteți un email sau un mesaj către pacient pentru a-l informa cu privire la necesitatea efectuării analizelor medicale.
+Asigurați-vă că informațiile trimise sunt clare și ușor de înțeles pentru pacient.
+Urmărirea Dosarului Medical:
+
+Dezvoltați un sistem pentru a urmări dosarul medical al pacientului.
+Asigurați-vă că dosarul medical include informații esențiale, cum ar fi istoricul medical, prescripții medicale, rezultate ale analizelor, etc.
+Implementați un sistem de căutare și sortare pentru a face ușor accesibile informațiile din dosarul medical.
+Înregistrarea Dosarului Medical:
+
+Dezvoltați o interfață intuitivă pentru înregistrarea informațiilor medicale relevante ale pacientului.
+Asigurați-vă că datele introduse sunt valide și respectă standardele de securitate și confidențialitate în domeniul medical.
+Implementați un sistem de validare pentru a evita erorile de introducere a datelor.
+Stocarea Dosarului Medical:
+
+Alegeți o soluție robustă de stocare a datelor pentru a păstra dosarele medicale în condiții de siguranță și accesibile.
+Implementați măsuri de securitate pentru a proteja informațiile sensibile ale pacientului.
+Asigurați-vă că există o modalitate de backup a datelor pentru a preveni pierderea informațiilor în caz de evenimente neașteptate.
+Acces la Dosar Oricând:
+
+Dezvoltați o interfață web sau mobilă prietenoasă pentru a permite pacienților accesul la dosarele lor medicale oricând.
+Asigurați-vă că sistemul este ușor de navigat și că pacienții pot găsi rapid informațiile de care au nevoie.
+Implementați măsuri de securitate pentru a proteja datele personale ale pacienților.
+În plus, este important să respectați reglementările și standardele privind confidențialitatea datelor medicale [/INST] Această ofertă preliminară este bazată pe informațiile pe care ni le-ați furnizat. Înainte de a începe efectiv dezvoltarea și de a vă putea oferi o estimare exactă a costurilor și timpului necesar, va fi necesar să parcurgem câteva etape esențiale de planificare
+
+1. Elaborarea unei diagrame logice pentru a defini arhitectura aplicației. 
+2. Crearea unei diagrame ER pentru a structura baza de date. 
+3. Realizarea unui design inițial în Figma pentru a elimina orice ambiguitate legată de interfața grafică. 
+
+Pentru începerea etapelor de mai sus, va fi necesar să semnăm un contract de colaborare și să achitați în avans prețul acestora: 
+
+Diagrama logică și diagrama ER: X Euro + TVA 
+Proiectul în Figma: X Euro + TVA 
+Acești bani se vor scădea din prețul total de dezvoltare odată acceptată oferta fermă. 
+
+Oferta de mai jos este doar orientativă și urmărește să vă ofere o perspectivă asupra modului în care operăm și a costurilor probabile. Pentru o ofertă și un timp de implementare exact, va fi necesar să completăm etapele de planificare menționate
+
+Definiții și tehnologii folosite:
+● ERP (Enterprise Resource Planning):
+○ ERP este un acronim pentru "Enterprise Resource Planning" sau "Planificarea Resurselor Enterprise" în română. Este un sistem de software care ajută organizațiile să gestioneze și să integreze eficient toate procesele lor de afaceri, inclusiv contabilitatea, resursele umane, gestionarea stocurilor, producția, vânzările și multe altele. Scopul principal al unui sistem ERP este să faciliteze fluxurile de lucru interne și să ofere o imagine consolidată și în timp real a resurselor și proceselor organizației.
+
+● CRM (Customer Relationship Management):
+○ CRM este un acronim pentru "Customer Relationship Management" sau "Gestionarea Relațiilor cu Clienții" în română. Este o strategie și un set de tehnologii utilizate pentru a gestiona relațiile și interacțiunile cu clienții. Scopul principal al unui sistem CRM este să îmbunătățească relațiile cu clienții, să optimizeze procesele de vânzare și marketing și să ofere o mai bună experiență generală pentru clienți.
+
+● React:
+○ React este o bibliotecă JavaScript pentru construirea interfețelor de utilizator. Este utilizată pentru crearea unor interfețe de utilizator reactive și eficiente din punct de vedere al performanței.
+
+● Ionic:
+○ Ionic este un framework open-source pentru dezvoltarea de aplicații mobile hibride. Utilizează tehnologii web precum JavaScript/React/Angular  pentru a construi aplicații pentru platforme mobile, cum ar fi iOS și Android.
+
+● NestJS:
+○ NestJS este un framework pentru dezvoltarea de aplicații server-side cu Node.js. Este construit pe baza arhitecturii modulare și utilizează TypeScript pentru a oferi un cod bine structurat și ușor de întreținut.
+
+● Firebase:
+○ Firebase este o platformă de dezvoltare a aplicațiilor mobile. Furnizează servicii precum bază de date în timp real, autentificare, stocare și hosting, facilitând dezvoltarea rapidă și scalabilă a aplicațiilor.
+
+● MongoDB:
+○ MongoDB este un sistem de gestionare a bazelor de date NoSQL, orientat pe documente. În loc de tabele, MongoDB folosește colecții și documente JSON-like, oferind flexibilitate și scalabilitate în stocarea datelor.
+
+● API (Interfață de Programare a Aplicațiilor):
+○ API reprezintă un set de reguli și protocoale care permit comunicarea între diferite componente ale software-ului/aplicației. Este folosit pentru a permite integrarea între diferite aplicații sau servicii, facilitând schimbul de informații și funcționalități între ele.
+
+
+II. Dezvoltare de bază: 
+
+Notă: Pentru structura proiectului de bază se alocă 2 programatori pentru dezvoltarea proiectului, fiecare având o implicare de 510 ore de lucru, în total fiind 1020 de ore.
+
+
+1. Aplicație Admin CRM - ERP:
+
+● Autentificare Administrator și Medici
+
+- Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (obligatoriu).
+
+● Gestionare Pacienți și Medici:
+
+- Administratorul va adăuga, modifica și șterge informațiile despre:
+➢ medici
+➢ pacienți
+➢ informații medicale ale pacienților precum:
+○ istoricul facturilor 
+○ dosarul medical
+○ planurile de tratament
+
+- Medicii o să adauge, modifice și șteargă informații în dosarul medical al fiecărui pacient.
+
+● Puncte de Lucru Diferite:
+
+- Implementarea unui sistem pentru a opera pe mai multe puncte de lucru (unități medicale) cu opțiunea de comutare simplă între acestea. 
+
+● Permisiuni:
+
+- Implementarea unui sistem de permisiuni pentru:
+
+○ gestionarea accesului utilizatorilor la datele sensibile
+○ oferirea accesului diferiților medici la dosarul unui pacient
+○ permiterea administratorului principal să poată adăuga mai mulți administratori
+
+
+● Programări Medicale:
+
+- Sistem de tip calendar în care administratorul și medicii pot crea, modifica și anula programările pentru pacienți.
+
+● Clasificarea Serviciilor Medicale:
+
+- Pentru fiecare punct de lucru, vor fi definite categorii specifice de servicii, pentru a ușura procesul de programare pentru pacienți. 
+
+- Adăugarea și atribuirea medicilor la categoriile de servicii.
+
+
+● Monitorizarea Activității:
+
+- Implementarea unui sistem de monitorizare a activității pacienților și medicilor pentru fiecare punct de lucru.
+
+● Documentație:
+
+- Elaborarea unei documentații detaliate pentru utilizarea aplicației.
+
+● Gestionarea Dosarului Medical:
+
+- Dezvoltarea unei secțiuni în aplicație pentru vizualizarea, descărcarea și gestionarea dosarului medical al pacientului, inclusiv:
+
+■ istoric medical
+■ prescripții medicale 
+■ tratament anterior, actual
+■ rezultate ale analizelor
+■ documente, etc.
+
+
+● Sistem de Căutare și Sortare în Dosarul Medical:
+
+- Implementarea funcțiilor de căutare și sortare a informațiilor din dosarul medical, utilizând API-ul Algolia.
+
+● Notificări:
+
+- Integrarea API-ului OneSignal pentru trimiterea de notificări din aplicație.
+- Implementarea unui sistem automat de trimitere a email-urilor.
+
+- Se vor trimite notificări medicilor și administratorului atunci când un pacient crează, modifică sau anulează o programare.
+
+2. Aplicație Pacient:
+
+● Autentificare Pacient:
+
+- Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (parolă opțională).
+
+● Sistem de Programare pentru Analize Medicale:
+
+- Dezvoltarea unui sistem de tip calendar în care pacienții pot:
+○ consulta disponibilitatea programărilor pentru analize
+○ efectua, modifica și anula programări personale
+
+● Notificări
+
+- Integrarea API-ului OneSignal pentru trimiterea de notificări din aplicație.
+- Integrarea API-ului SmsAdvert pentru a trimite mesaje pe telefoanele mobile.
+- Implementarea unui sistem automat de trimitere a email-urilor.
+
+- Aceste 3 sisteme vor trimite notificări pentru: 
+○ efectuarea de analize periodice pentru pacienți
+○ programările medicale următoare
+○ programări anulate de către medici sau administratori
+○ statusul analizelor 
+
+● Dosar Medical
+
+- Secțiune în care pacientul poate vizualiza și descărca istoricul medical.
+
+
+III. Sugestii suplimentare:
+
+Notă: Menționăm că secțiunea de sugestii suplimentare este opțională. Pentru această secțiune se alocă 2 programatori, fiecare având o implicare de 90 ore de lucru, în total fiind 180 de ore.
+
+● Chat în Timp Real între Pacienți și Medici:
+
+- Implementarea unui sistem de chat în timp real  între pacienți, medici și administrator.
+
+● Plată Online:
+
+ 	- Integrare API Stripe pentru plata online.
+
+● Facturi:
+
+- Sistem de facturare pentru utilizatori prin API SmartBill sau alte soluții similare.
+
+
+
+IV. Pret și timp de implementare: 
+
+This document was truncated here because it was created in the Evaluation Mode. </s>

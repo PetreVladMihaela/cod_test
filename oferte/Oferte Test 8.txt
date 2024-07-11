@@ -1,0 +1,131 @@
+<s>[INST] Vrea o aplicatie tip tombola pe baza de tichete. In urma unor calcule pret tichet-cost premiu si profit rezulta un numar de tichete disponibile pentru achizitie. Extragerea tichetului castigator se va realiza dupa ce se epuizeaza stocul de tichete (sa fie afisat in aplicatie si nr tichete ramane) si extragerea sa se faca printr-un API cu un program de tip random.org. Premiul afisat pe prima pagina , o masina de lux. [/INST] Această ofertă preliminară este bazată pe informațiile pe care ni le-ați furnizat. Înainte de a începe efectiv dezvoltarea și de a vă putea oferi o estimare exactă a costurilor și timpului necesar, va fi necesar să parcurgem câteva etape esențiale de planificare
+
+1. Realizarea unui design inițial în Figma pentru a elimina orice ambiguitate legată de interfața grafică. 
+
+Pentru începerea etapelor de mai sus, va fi necesar să semnăm un contract de colaborare și să achitați în avans prețul acestora: 
+
+Proiectul în Figma: X Euro + TVA 
+Acești bani se vor scădea din prețul total de dezvoltare odată acceptată oferta fermă. 
+
+Oferta de mai jos este doar orientativă și urmărește să vă ofere o perspectivă asupra modului în care operăm și a costurilor probabile. Pentru o ofertă și un timp de implementare exact, va fi necesar să completăm etapele de planificare menționate
+
+Definiții:
+● API (Interfața de Programare a Aplicațiilor):
+○ API-ul este un set de reguli și protocoale care permite aplicațiilor să comunice între ele. Prin intermediul unui API, o aplicație poate solicita sau trimite informații către o altă aplicație sau serviciu. API-urile pot fi utilizate pentru a accesa funcționalități ale altor aplicații sau servicii fără a dezvălui detaliile interne ale modului în care acele funcționalități sunt implementate.
+
+● WordPress:
+○ WordPress este o platformă robustă de gestionare a conținutului (CMS) open-source, utilizată pentru dezvoltarea și administrarea site-urilor web.
+
+● Plugin:
+○ Un plugin este o componentă software adițională care poate fi instalată și activată pentru a oferi caracteristici noi sau îmbunătățite site-ului web.
+
+● WooCommerce:
+○ WooCommerce este o platformă de comerț electronic pentru WordPress.
+
+● Widget:
+○ Un widget este un mic element grafic interactiv sau o aplicație vizuală, integrat într-o interfață grafică, precum cea a unui site web sau a unui sistem software.
+
+● Figma:
+○ Figma este o platformă de design și colaborare bazată pe web, furnizând instrumente puternice pentru crearea, prototipizarea și colaborarea în ceea ce privește designul produselor digitale.
+
+
+
+II. Propunere structură:
+
+Dezvoltarea unui site de tip tombolă/loterie pe platforma WordPress, bazată pe tichete disponibile pentru achiziție și beneficiind de un design grafic complet personalizat și unic. Acest proiect va utiliza eficient un plugin în combinație cu WooCommerce în WordPress pentru a optimiza funcționalitatea.
+
+
+1. Grafică Personalizată și Unică:
+
+- Echipa noastră de design va crea o grafică personalizată adaptată cerințelor specifice ale proiectului.
+
+- Dezvoltăm întregul concept grafic de la zero, asigurându-ne că fiecare detaliu reflectă identitatea și viziunea distinctă ale proiectului.
+
+- Adăugăm elemente interactive și responsive pentru a oferi o experiență fluidă și atrăgătoare pe toate dispozitivele.
+
+- Implementarea de animații subtile pentru a îmbogăți interacțiunea utilizatorilor cu aplicația.
+
+- Evidențierea unei loterii sau unui premiu specific pe prima pagină, oferind utilizatorilor o experiență focalizată și atrăgătoare.
+
+2. Configurare Loterie:
+
+● Posibilitatea de a seta manual sau automat:
+- Numărul de câștigători pentru o loterie.
+- Prețul tichetelor.
+- Extragerea automată a câștigătorului la vânzarea maximă a tichetelor sau la o anumită perioadă de timp.
+- Extragerea manuală sau automată a căștigătorilor prin API-ul random.org.
+
+● Configurare Bilete/ Tichete:
+- Opțiunea de a adăuga o literă în fața biletelor (A1, A100, B1…, B100 etc.).
+- Numerele pot începe de la orice număr (de exemplu, primul bilet poate fi 300).
+- Administratorul poate adăuga manual un număr în loterie.
+
+● Adăugarea Opțiunii de Loterie cu Numere:
+
+- Utilizatorul își poate alege personal numerele sau poate opta pentru selecție automată.
+
+● Loterie Instantanee:
+
+- Loterie în care participanții pot verifica imediat dacă au câștigat, atunci când numărul potrivit este extras.
+
+3. Flexibilitate în Control:
+
+- Setarea perioadei de start și de terminare a loteriei.
+- Modificarea manuală a termenului limită de extragere a loteriei.
+- Setarea numărului minim și maxim de tichete disponibile pentru o loterie.
+- Setarea numărului maxim de tichete per utilizator.
+- Configurarea numărului de câștigători și a posibilității de câștig multiplu pe loterie.
+
+     4. Notificări E-mail:
+
+- Notificări prin e-mail pentru participanți în cazul în care au câștigat sau nu.
+
+     5. Widget-uri pentru Loterii:
+
+● Widget-uri cu informații despre loterii:
+- Loterii care se termină curând.
+- Loterii viitoare.
+- Loterii recente.
+
+     6. Întrebări și Răspunsuri:
+
+- Adăugarea de întrebări și răspunsuri pentru loterii.
+- Opțiunea de a permite doar răspunsuri corecte sau de a permite checkout cu răspuns greșit (fără participare la extragere).
+
+     7. Informații Participanți:
+
+- Exportul datelor participanților în format CSV și Excel (sortabil).
+- Capacitatea de a vizualiza detalii complete ale utilizatorilor participanți la loterie.
+- Informații incluse: utilizator, numărul biletului, data achiziției (conform politicilor de confidențialitate).
+
+     8. Legare de Procesator de Plăți Online și Integrarea unui Plugin pentru WooCommerce cu o Firmă de Facturare:
+
+- Integrarea unui plugin de facturare și plată compatibil cu WooCommerce pentru a facilita cumpărarea online a tichetelor.
+
+III. Sugestii suplimentare: 
+
+Notă: Menționăm că secțiunea de sugestii suplimentare este opțională.
+
+● Utilizarea produsului nostru personalizat, WebToApp.ro, oferă posibilitatea de a transforma aplicația de loterie într-o aplicație mobilă dedicată.
+
+● Odată ce aplicația mobilă este pregătită, o vom încărca/ adăuga în Google Play Store pentru dispozitive Android și în App Store pentru dispozitive iOS.
+
+IV. Pret și timp de implementare: 
+
+*Fiecare punct poate fi supus modificării, editării sau realizării într-un mod mai sumar, cu reducerea funcționalităților, în vederea obținerii unei costuri mai reduse.
+
+*Prețul este orientativ și nu trebuie să fie limitativ; în cazul în care bugetul beneficiarului este mai restrâns decât oferta noastră în faza de proiectare, putem identifica alternative la costuri inferioare prin integrarea unui număr redus de funcționalități.
+
+Timp estimat de livrare: 
+- Dezvoltare pentru site-ul de bază: X Euro + TVA
+
+- Dezvoltare de bază împreună sugestii suplimentare: X Euro + TVA
+
+Timpul de livrare este influențat de complexitatea proiectului și cerințele dumneavoastră. Vom lucra în strânsă colaborare cu dumneavoastră pentru a respecta termenele stabilite.
+
+*În cadrul actualei oferte, beneficiați de serviciile a unui programatori specializat în limbajul de programare necesar pentru proiectul dumneavoastră (php și JavaScript pentru WordPress), un manager de proiect care va concepe și coordona proiectul, precum și un grafician responsabil de conceperea interfeței utilizatorului/aplicației. Fiecare echipă din cadrul societății noastre dispune de suportul unui mentor, responsabil de supravegherea și asistarea programatorilor.
+
+Termeni de achiziție:
+​
+1. Această ofertă este strict confidențială. Veziv IT Services SRL nu oferă permisiunea de a împărtăși detalii cu terțe părți.
+2. Prețurile sunt fără TVA. </s>

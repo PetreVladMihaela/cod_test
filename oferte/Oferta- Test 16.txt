@@ -1,0 +1,144 @@
+<s>[INST] Îmi puteți descrie cum este structurat fluxul de lucru al activității dvs. de la momentul în care contactați un client până la livrarea produsului sau serviciului?
+
+Identificați cerințele exacte ale utilizatorilor, inclusiv a medicilor și a unităților medicale.
+Stabiliți funcționalitățile cheie ale aplicației, cum ar fi crearea de cont, căutarea locurilor de muncă, sincronizarea cu alte unități medicale și gestionarea programului.
+Proiectare a Bazei de Date:
+
+Proiectați o bază de date care să stocheze informații despre medici, unități medicale, locuri de muncă disponibile și programul medicilor.
+
+Căutare și Sincronizare:
+
+Dezvoltați funcționalitatea de căutare pentru medici într-o anumită locație (de exemplu, în jurul orașului Brașov, într-un raza de 20 km).
+Implementați un sistem de sincronizare pentru actualizarea în timp real a locurilor de muncă și a programelor medicilor.
+Integrare Calendar:
+
+Integrați o funcționalitate de calendar pentru medic, permițându-i să-și gestioneze programul și să își sincronizeze disponibilitatea cu locurile de muncă disponibile. [/INST] Această ofertă preliminară este bazată pe informațiile pe care ni le-ați furnizat. Înainte de a începe efectiv dezvoltarea și de a vă putea oferi o estimare exactă a costurilor și timpului necesar, va fi necesar să parcurgem câteva etape esențiale de planificare
+
+1. Elaborarea unei diagrame logice pentru a defini arhitectura aplicației. 
+2. Crearea unei diagrame ER pentru a structura baza de date. 
+3. Realizarea unui design inițial în Figma pentru a elimina orice ambiguitate legată de interfața grafică. 
+
+Pentru începerea etapelor de mai sus, va fi necesar să semnăm un contract de colaborare și să achitați în avans prețul acestora: 
+
+Diagrama logică și diagrama ER: X Euro + TVA 
+Proiectul în Figma: X Euro + TVA 
+Acești bani se vor scădea din prețul total de dezvoltare odată acceptată oferta fermă. 
+
+Oferta de mai jos este doar orientativă și urmărește să vă ofere o perspectivă asupra modului în care operăm și a costurilor probabile. Pentru o ofertă și un timp de implementare exact, va fi necesar să completăm etapele de planificare menționate
+
+Definiții și tehnologii folosite:
+● React:
+○ React este o bibliotecă JavaScript pentru construirea interfețelor de utilizator. Este utilizată pentru crearea unor interfețe de utilizator reactive și eficiente din punct de vedere al performanței.
+
+● Ionic:
+○ Ionic este un framework open-source pentru dezvoltarea de aplicații mobile hibride. Utilizează tehnologii web precum JavaScript/React/Angular  pentru a construi aplicații pentru platforme mobile, cum ar fi iOS și Android.
+
+● NestJS:
+○ NestJS este un framework pentru dezvoltarea de aplicații server-side cu Node.js. Este construit pe baza arhitecturii modulare și utilizează TypeScript pentru a oferi un cod bine structurat și ușor de întreținut.
+
+● Firebase:
+○ Firebase este o platformă de dezvoltare a aplicațiilor mobile. Furnizează servicii precum bază de date în timp real, autentificare, stocare și hosting, facilitând dezvoltarea rapidă și scalabilă a aplicațiilor.
+
+● MongoDB:
+○ MongoDB este un sistem de gestionare a bazelor de date NoSQL, orientat pe documente. În loc de tabele, MongoDB folosește colecții și documente JSON-like, oferind flexibilitate și scalabilitate în stocarea datelor.
+
+● API (Interfață de Programare a Aplicațiilor):
+○ API reprezintă un set de reguli și protocoale care permit comunicarea între diferite componente ale software-ului/aplicației. Este folosit pentru a permite integrarea între diferite aplicații sau servicii, facilitând schimbul de informații și funcționalități între ele.
+
+
+II. Dezvoltare de bază: 
+
+Notă: Pentru structura proiectului de bază se alocă 2 programatori pentru dezvoltarea proiectului, fiecare având o implicare de 190 ore de lucru, în total fiind 380 de ore.
+
+1. Autentificare și Înregistrare Client:
+
+● Sistem de înregistrare și autentificare ușor și prietenos.
+● Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (parolă opțională).
+
+2. Autentificare Administrator
+
+● Sistem de autentificare ușor și prietenos.
+● Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (obligatoriu).
+
+3. Gestionarea Locurilor de Muncă
+
+● Administratorul va încărca, modifica și șterge locurile de muncă.
+
+4. Permisiuni și Sincronizarea Datelor:
+
+● Sistem de permisiuni, pentru ca administratorul principal să poată adăuga mai mulți administratori.
+
+● Sincronizarea datelor în timp real între unitățile medicale, inclusiv informații despre:
+○ unitățile medicale
+○ locurile de muncă
+○ medici
+○ programul de lucru al medicilor
+○ pacienți
+
+5. Sistem de Căutare:
+
+a) Implementarea unui sistem prin care medicii caută locuri de muncă în funcție de:
+○ localitate
+○ unități medicale
+○ specializare medicală
+○ experiență
+
+b) Integrarea API-ului de la Google Maps pentru a permite căutarea în funcție de:
+○ locație
+○ o anumită de acoperire față de locație
+
+
+● Integrarea API-ului Algolia pentru sortarea și filtrarea căutărilor.
+
+Notă: Dacă nu se dorește utilizarea API-ului de la Google Maps din motive de cost, se poate implementa un algoritm care calculează raza de acoperire.
+
+6. Gestionare Program:
+
+● Dezvoltarea unui sistem de tip calendar în care medicii își gestionează:
+○ programul de muncă 
+○ disponibilitatea cu locurile de muncă
+
+● Funcționalități de:
+○ adăugare
+○ modificare
+○ ștergere
+○ posibilitatea de a fi vizualizat în format zilnic, săptămânal sau lunar.
+
+
+III. Sugestii suplimentare:
+
+Notă: Menționăm că secțiunea de sugestii suplimentare este opțională. Pentru această secțiune se alocă 2 programatori, fiecare având o implicare de 80 ore de lucru, în total fiind 160 de ore.
+
+
+1. Chat în timp real:
+
+● Implementarea unui sistem de chat în timp real între utilizatori, medici și administrator.
+
+2. Notificări
+
+● Implementarea unui sistem de notificări în timp real prin intermediul API-ului OneSignal pentru:
+
+○ alertele setate de medici atunci când apare un loc de muncă care corespunde cerințelor lor
+
+○ notificări pentru începerea, modificarea programului de lucru al medicilor.
+
+
+IV. Pret și timp de implementare: 
+
+*Fiecare punct poate fi supus modificării, editării sau realizării într-un mod mai sumar, cu reducerea funcționalităților, în vederea obținerii unei costuri mai reduse.
+
+*Prețul este orientativ și nu trebuie să fie limitativ; în cazul în care bugetul beneficiarului este mai restrâns decât oferta noastră în faza de proiectare, putem identifica alternative la costuri inferioare prin integrarea unui număr redus de funcționalități.
+
+Timp estimat de livrare: 
+- Dezvoltare de bază (190 Ore de Dezvoltare): X Euro + TVA
+
+- Dezvoltare de bază împreună cu sugestii suplimentare (270 Ore de Dezvoltare): X Euro + TVA
+
+Timpul de livrare este influențat de complexitatea proiectului și cerințele dumneavoastră. Vom lucra în strânsă colaborare cu dumneavoastră pentru a respecta termenele stabilite.
+
+*În cadrul actualei oferte, beneficiați de serviciile a doi programatori specializați în limbajul de programare necesar pentru proiectul dumneavoastră, un manager de proiect care va concepe și coordona proiectul, precum și un grafician responsabil de conceperea interfeței utilizatorului/aplicației. Fiecare echipă din cadrul societății noastre dispune de suportul unui mentor, responsabil de supravegherea și asistarea programatorilor. Prețul pentru această echipă este de X de euro pe oră. 
+
+Termeni de achiziție:
+​
+1. Această ofertă este strict confidențială. Veziv IT Services SRL nu oferă permisiunea de a împărtăși detalii cu terțe părți.
+2. Prețurile sunt fără TVA. </s>

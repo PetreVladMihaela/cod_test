@@ -1,0 +1,124 @@
+<s>[INST] Îmi puteți descrie cum este structurat fluxul de lucru al activității dvs. de la momentul în care contactați un client până la livrarea produsului sau serviciului?
+
+Autentificare în Aplicație:
+
+Clientul deschide aplicația și accesează secțiunea de autentificare.
+Introduce datele sale de utilizator (nume de utilizator și parolă) pentru a accesa contul personal.
+Alegere Serviciu:
+
+După autentificare, clientul navighează în aplicație pentru a alege serviciul dorit dintr-o listă disponibilă.
+Plată Lunară:
+
+Clientul adaugă serviciul în coșul de cumpărături virtual și procedează la efectuarea plății.
+Optează pentru modalitatea de plată lunară pentru a asigura o abordare mai comodă.
+Generare Fișier PDF Personalizat:
+
+După confirmarea plății, aplicația generează automat un fișier PDF personalizat.
+Datele clientului, inclusiv detaliile privind serviciul și informațiile de plată, sunt introduse în mod automat în acest document.
+Descărcare Fișier PDF:
+
+Clientul are acum acces la fișierul PDF generat în secțiunea sa personală a aplicației.
+Poate descărca acest fișier pentru a avea o înregistrare detaliată și personalizată a tranzacției sale.
+
+Care sunt principalele obiective pentru acest sistem/software și ce probleme trebuie să rezolve?
+În momentul în care utilizatorul introduce datele, acestea ar trebui să fie preluate automat și completate în fișierul PDF pe care dorește să-l descarce. [/INST] Această ofertă preliminară este bazată pe informațiile pe care ni le-ați furnizat. Înainte de a începe efectiv dezvoltarea și de a vă putea oferi o estimare exactă a costurilor și timpului necesar, va fi necesar să parcurgem câteva etape esențiale de planificare
+
+1. Elaborarea unei diagrame logice pentru a defini arhitectura aplicației. 
+2. Crearea unei diagrame ER pentru a structura baza de date. 
+3. Realizarea unui design inițial în Figma pentru a elimina orice ambiguitate legată de interfața grafică. 
+
+Pentru începerea etapelor de mai sus, va fi necesar să semnăm un contract de colaborare și să achitați în avans prețul acestora: 
+
+Diagrama logică și diagrama ER: X Euro + TVA 
+Proiectul în Figma: X Euro + TVA 
+Acești bani se vor scădea din prețul total de dezvoltare odată acceptată oferta fermă. 
+
+Oferta de mai jos este doar orientativă și urmărește să vă ofere o perspectivă asupra modului în care operăm și a costurilor probabile. Pentru o ofertă și un timp de implementare exact, va fi necesar să completăm etapele de planificare menționate
+
+Definiții și tehnologii folosite:
+● React:
+○ React este o bibliotecă JavaScript pentru construirea interfețelor de utilizator. Este utilizată pentru crearea unor interfețe de utilizator reactive și eficiente din punct de vedere al performanței.
+
+● Ionic:
+○ Ionic este un framework open-source pentru dezvoltarea de aplicații mobile hibride. Utilizează tehnologii web precum JavaScript/React/Angular  pentru a construi aplicații pentru platforme mobile, cum ar fi iOS și Android.
+
+● NestJS:
+○ NestJS este un framework pentru dezvoltarea de aplicații server-side cu Node.js. Este construit pe baza arhitecturii modulare și utilizează TypeScript pentru a oferi un cod bine structurat și ușor de întreținut.
+
+● Firebase:
+○ Firebase este o platformă de dezvoltare a aplicațiilor mobile. Furnizează servicii precum bază de date în timp real, autentificare, stocare și hosting, facilitând dezvoltarea rapidă și scalabilă a aplicațiilor.
+
+● MongoDB:
+○ MongoDB este un sistem de gestionare a bazelor de date NoSQL, orientat pe documente. În loc de tabele, MongoDB folosește colecții și documente JSON-like, oferind flexibilitate și scalabilitate în stocarea datelor.
+
+● API (Interfață de Programare a Aplicațiilor):
+○ API reprezintă un set de reguli și protocoale care permit comunicarea între diferite componente ale software-ului/aplicației. Este folosit pentru a permite integrarea între diferite aplicații sau servicii, facilitând schimbul de informații și funcționalități între ele.
+
+
+II. Dezvoltare de bază: 
+
+Notă: Pentru structura proiectului de bază se alocă 2 programatori pentru dezvoltarea proiectului, fiecare având o implicare de 195 ore de lucru, în total fiind 390 de ore.
+
+1. Autentificare și Înregistrare Client:
+
+● Sistem de înregistrare și autentificare ușor și prietenos.
+● Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (parolă opțională).
+
+2. Autentificare Administrator
+
+● Sistem de autentificare ușor și prietenos.
+● Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (obligatoriu).
+
+3. Accesul Utilizatorilor la Documente
+
+● Utilizatorii au acces la documente:
+○ printr-un abonament lunar sau anual (cel anual va avea un discount)
+○ pot cumpăra un document cu un cost diferit (chiar dacă nu au un abonament)
+
+4. Gestiunea Abonamentelor și Accesul la Documente
+
+● Administratorul selectează documentele disponibile pentru fiecare tip de abonament și documentele ce pot fi descărcate.
+
+● Utilizatorii văd lista de documente la care au acces, în funcție de abonamentul lor sau pe care le-au cumpărat individual.
+
+
+5. Generare Documente
+
+● Crearea de șabloane și generarea automată a documentelor prin intermediul API-ului Google Docs sau direct în Word. 
+
+● Procesul de completare se realizează printr-un formular care se completează de către client, aceste date vor fi stocate în baza de date pentru a se folosi automat ulterior dacă clientul dorește.
+
+● Implementarea unei secțiuni în care utilizatorul poate vizualiza și descărca documentele PDF generate.
+
+Notă: Acest sistem vă permite să creați orice tip de document prin intermediul Google Docs (o aplicație online gratuită lansată de Google, similară programului Word). În Google Docs se creează primul șablon cu dimensiunea foilor pentru a putea fi utilizat cu imprimantele matriciale. În momentul generării unui document, se vor putea lega datele salvate din profilul clienților pentru a genera documentul pe baza șablonului salvat în sistem. Acest sistem, după crearea șabloanelor, este util pentru toate documentele pe care clienții le pot genera doar printr-un clic.
+
+6. Plată Online:
+
+● Integrare API Stripe pentru plata online.
+
+7. Facturi:
+
+● Sistem de facturare pentru clienți prin API SmartBill sau alte soluții similare.
+
+8. Încărcare aplicație mobilă pe Google Store și App Store
+
+
+
+Timp estimat de livrare: 
+Dezvoltare de bază (195 Ore de Dezvoltare): X Euro + TVA
+
+
+III. Pret și timp de implementare: 
+
+*Fiecare punct poate fi supus modificării, editării sau realizării într-un mod mai sumar, cu reducerea funcționalităților, în vederea obținerii unei costuri mai reduse.
+
+*Prețul este orientativ și nu trebuie să fie limitativ; în cazul în care bugetul beneficiarului este mai restrâns decât oferta noastră în faza de proiectare, putem identifica alternative la costuri inferioare prin integrarea unui număr redus de funcționalități.
+
+Timpul de livrare este influențat de complexitatea proiectului și cerințele dumneavoastră. Vom lucra în strânsă colaborare cu dumneavoastră pentru a respecta termenele stabilite.
+
+*În cadrul actualei oferte, beneficiați de serviciile a doi programatori specializați în limbajul de programare necesar pentru proiectul dumneavoastră, un manager de proiect care va concepe și coordona proiectul, precum și un grafician responsabil de conceperea interfeței utilizatorului/aplicației. Fiecare echipă din cadrul societății noastre dispune de suportul unui mentor, responsabil de supravegherea și asistarea programatorilor. Prețul pentru această echipă este de X de euro pe oră. 
+
+Termeni de achiziție:
+​
+1. Această ofertă este strict confidențială. Veziv IT Services SRL nu oferă permisiunea de a împărtăși detalii cu terțe părți.
+2. Prețurile sunt fără TVA. </s>

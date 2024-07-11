@@ -1,0 +1,197 @@
+<s>[INST] Aplicatie clienti : sincronizare clienti offline/online program fidelizare clienti offline (aplicatie-card fizic) generare facturi si sincronizarea bonurilor cu facturi online date statistice - extragere cele mai vandute produse, cei mai frecventi clienti newsletter si mesaj promotional prin aplicatie si site discount en-gros (daca se doreste si este cazul putem dezvolta si aceasta sectiune) rezervare stoc Angajati: Aplicatie angajati: - pontaj - generare documente anjagat (ex: cerere concediu fara plata si cerere concediu de odihna) - Aplicatie admin : - generare si evidenta contracte de munca si documente aferente - sistem de bonusare/performanta Admin : sincronizare cu aplicatia client gestionare comenzi site si statusul lor stoc produse si sistem de notificari cu rezervare stoc furnizor generare awb din ERP Logistica: flota proprie de import si livrare (daca exista, urmarirea si organizarea acesteia) Website: optimizare web la nivel de experienta a utilizatorului integrare sistem de urmarire client (cand adauga in cos) sincronizare comenzi si status cu ERP Cashflow sold curent al firmei in banca si viitoarele plati si incasari impartite pe OP si BO (biletele la ordin sa fie cu reminder la inceput de saptamana- fie ca incaseaza fie ca plateste el). In momentul in care firma in cauza efectueaza un BO fiind un buget stabilit lunar pt ele , programul sa nu ii permita ca din greseala sa depaseasca acel buget in momentul in care noteaza in ERP un nou BO de efectuat. [/INST] Această ofertă preliminară este bazată pe informațiile pe care ni le-ați furnizat. Înainte de a începe efectiv dezvoltarea și de a vă putea oferi o estimare exactă a costurilor și timpului necesar, va fi necesar să parcurgem câteva etape esențiale de planificare
+
+1. Elaborarea unei diagrame logice pentru a defini arhitectura aplicației. 
+2. Crearea unei diagrame ER pentru a structura baza de date. 
+3. Realizarea unui design inițial în Figma pentru a elimina orice ambiguitate legată de interfața grafică. 
+
+Pentru începerea etapelor de mai sus, va fi necesar să semnăm un contract de colaborare și să achitați în avans prețul acestora: 
+
+Diagrama logică și diagrama ER: X Euro + TVA 
+Proiectul în Figma: X Euro + TVA 
+Acești bani se vor scădea din prețul total de dezvoltare odată acceptată oferta fermă. 
+
+Oferta de mai jos este doar orientativă și urmărește să vă ofere o perspectivă asupra modului în care operăm și a costurilor probabile. Pentru o ofertă și un timp de implementare exact, va fi necesar să completăm etapele de planificare menționate
+
+Definiții și tehnologii folosite:
+- ERP (Enterprise Resource Planning): ERP este un acronim pentru "Enterprise Resource Planning" sau "Planificarea Resurselor Enterprise" în română. Este un sistem de software care ajută organizațiile să gestioneze și să integreze eficient toate procesele lor de afaceri, inclusiv contabilitatea, resursele umane, gestionarea stocurilor, producția, vânzările și multe altele. Scopul principal al unui sistem ERP este să faciliteze fluxurile de lucru interne și să ofere o imagine consolidată și în timp real a resurselor și proceselor organizației.
+
+- API (Interfața de Programare a Aplicațiilor): este un set de reguli și protocoale care permite aplicațiilor să comunice între ele. Prin intermediul unui API, o aplicație poate solicita sau trimite informații către o altă aplicație sau serviciu. API-urile pot fi utilizate pentru a accesa funcționalități ale altor aplicații sau servicii fără a dezvălui detaliile interne ale modului în care acele funcționalități sunt implementate.
+
+- NestJS: este un framework open-source pentru dezvoltarea aplicațiilor server-side în limbajul de programare TypeScript. NestJS se bazează pe platforma Node.js și oferă o abordare modulară și scalabilă pentru construirea aplicațiilor backend.
+
+- Stripe: reprezintă o soluție de tehnologie financiară avansată, specializată în procesarea plăților online.
+
+- WebSocket: este un protocol de comunicare ce permite transmiterea bidirecțională a datelor între un browser web (sau altă aplicație client) și un server web, printr-o singură conexiune persistentă.
+
+
+II. Propunere structură: 
+
+1. Aplicație Client (252 de Ore * 2 Programatori):
+
+● Autentificare și Înregistrare:
+
+- Sistem de înregistrare și autentificare ușor și prietenos.
+- Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (parolă opțională).
+
+● Program Fidelizare Clienți:
+
+- Introducerea unui card fizic sau digital pentru fidelizarea clienților.
+- Beneficii personalizate, puncte de loialitate și oferte exclusive pentru membrii programului.
+
+● Facturi:
+
+	- Sistem de facturare pentru clienți prin API SmartBill sau alte soluții similare.
+	- Sincronizarea automată a facturilor online cu bonurile fiscale, asigurând o evidență financiară precisă.
+
+ Notă: Clientul își poate descărca și vizualiza facturile.
+
+● Comenzi Online și Rezervare Stocuri:
+
+- Conectare la baza de date existentă pentru preluarea produselor.
+- Sistem dedicat de tip coș de cumpărături permite clienților să adauge produse în coș și să finalizeze comanda într-un mod intuitiv.
+	- Funcționalitate de rezervare a stocurilor pentru produsele dorite.
+
+● Gateway:
+
+-  Integrare API Stripe sau alte soluții similare pentru plata online.
+
+● Discount en-gros:
+
+- Posibilitatea de a oferi discount-uri speciale pentru comenzi en-gros.
+
+● Date Statistice:
+
+- Prezentarea celor mai vândute produse și cei mai frecvenți clienți.
+- Colecție de date statistice din aplicația clienților și programul de fidelizare.
+
+● Newsletter și Mesaje Promoționale:
+
+- Opțiunea de a primi newslettere și mesaje promoționale prin intermediul aplicației și site-ului, cu integrare API OneSignal.
+- Personalizarea conținutului pentru a oferi oferte exclusive și noutăți relevante în baza colecției de date statistice.
+
+2. Aplicație Angajat (168 de Ore * 2 Programatori):
+
+● Pontaj:
+
+- Interfață concepută pentru a permite angajatului să efectueze pontajul de intrare și ieșire în mod eficient.
+- Posibilitatea de a înregistra orele de lucru prestate în timpul nopții și în zilele de weekend sau sărbători.
+- Acces facil la un istoric detaliat al pontajului anterior pentru referințe și urmărire.
+
+● Generare Documente:
+
+- Crearea de șabloane și generarea automată a documentelor pentru cereri de concediu fără plată și cereri de concediu de odihnă prin intermediul API-ului Google Docs.
+- Datele angajatului vor fi preluate din baza de date ERP, acestea sunt utilizate pentru a completa automat șabloanele de cerere.
+- Interfață intuitivă pentru angajat, care permite completarea și personalizarea informațiilor specifice, cum ar fi perioada de concediu și motivele aferente.
+
+Notă: Acest sistem vă permite să creați orice tip de document sau aviz prin intermediul Google Docs (o aplicație online gratuită lansată de Google, similară programului Word). În Google Docs se creează primul șablon cu dimensiunea foilor pentru a putea fi utilizat cu imprimantele matriciale. Acest sistem poate fi folosit pentru a genera mai multe tipuri de documente, cum ar fi contracte, acte adiționale, etc. În momentul generării unui document sau aviz, se vor putea lega datele salvate din profilul clienților, precum și datele salvate despre produse, pentru a genera documentul pe baza șablonului salvat în sistem. Acest sistem, după crearea șabloanelor, este util pentru toate documentele/avizele care trebuie generate periodic pentru clienți, produse și resurse umane, doar printr-un clic.
+
+● Gestionare Documente:
+
+- Acces la o secțiune dedicată pentru a vizualiza contractul de muncă, diverse documente aferente angajării, precum anexe la contract, regulamente interne și alte formulare.
+- Integrare cu Aplicația Admin pentru a asigura actualizarea automată a informațiilor legate de contracte de muncă și documente aferente.
+
+● Istoric Plăți:
+
+- Secțiune dedicată pentru afișarea detaliată a istoricului plăților primite de angajat. Informații precum data plății, suma și descrierea tranzacției.
+
+● Sistem de Taskuri/Sarcini:
+
+- Angajatul are acces la o listă a taskurilor atribuite, inclusiv detalii precum descriere, termen limită și status.
+- Angajatul poate schimba statusul taskului pentru a reflecta stadiul actual al activității.
+- Automat, angajatul primește un punctaj pentru fiecare task finalizat în termenul stabilit.
+- O secțiune pentru afișarea taskurilor finalizate, furnizând un istoric împreună cu detalii suplimentare precum data finalizării și punctajul obținut.
+
+● Sistem de Bonusare/Performanță:
+
+- Informații privind obiectivele atinse, evaluări periodice și eventualele bonusuri disponibile.
+
+
+3. Aplicație Admin (344 de Ore * 2 Programatori):
+
+● Funcționalități pentru Administrator:
+
+- Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (obligatoriu).
+
+● Gestionare Admini:
+ - Creare și modificare permisiuni ale adminilor din partea super administratorului.
+
+● Istoricul Pontajului Angajaților:
+
+- Administratorul beneficiază de un instrument de urmărire a pontajelor angajaților, oferind o privire detaliată asupra istoricului intrărilor și ieșirilor acestora.
+
+● Documente și Cereri de Concediu:
+
+- Secțiune dedicată pentru vizualizarea și administrarea documentelor angajaților, inclusiv contracte de muncă, anexe, regulamente interne și formulare.
+- Administrarea eficientă a cererilor de concediu, permițând monitorizarea stării acestora și facilitând procesul de aprobare și înregistrare.
+
+● Sistem GestionareTaskuri/Sarcini pentru Angajați:
+
+- Administratorul are posibilitatea de a adăuga sau modifica taskuri, precizând detalii relevante, termene limită, statusuri și responsabilii atribuiți.
+- Administratorul poate acorda puncte bonus angajaților pentru taskurile finalizate cu succes.
+- O secțiune ce permite vizualizarea taskurilor finalizate de către angajați, oferind un istoric detaliat care include data finalizării, punctajul obținut și alte informații relevante pentru fiecare angajat în parte.
+
+● Sincronizarea Aplicației Angajat cu Aplicația Client pentru asigurarea schimbului constant de informații între cele două aplicații.
+
+● Gestionarea Comenzilor și Statusul lor:
+
+- Secțiune dedicată pentru gestionarea comenzilor primite prin site, cu actualizări în timp real a statusului acestora.
+- Detalii precum data comenzii, produsele achiziționate și statusul curent sunt vizibile pentru o monitorizare eficientă.
+- Sistem automat de actualizare a statusului comenzilor.
+- Posibilitatea de a adăuga comenzi manuale.
+- Generarea automată a AWB-urilor cu toate informațiile necesare, inclusiv adresa de livrare, produsele incluse și detaliile comenzii asociate, prin intermediul API-ului.
+- Implementarea funcționalității de urmărire a stării livrărilor, cu notificări automate pentru clienți și administratori, integrate prin intermediul API-ului.
+
+● Vizualizare Produse:
+
+- O secțiune definită în care administratorii pot vedea și gestiona în timp real toate produsele cu detalii lor.
+- Informații detaliate, cum ar fi cantitatea disponibilă, cea rezervată pentru comenzi, și stocul total.
+
+● Notificare Stoc Scăzut:
+
+- Implementare a unui sistem automat de notificare prin intermediul API-ului OneSignal și web-sockets atunci când stocul unui produs atinge un prag minim prestabilit.
+
+● Rezervarea Stocului la Furnizor:
+
+- Integrare a unui sistem prin care, atunci când stocul unui produs este în pragul minim prestabilit, un e-mail sau un document automat este trimis către furnizor pentru a solicita suplimentarea stocului.
+
+● Gestionarea Cash-Flow-ului:
+
+- Monitorizarea soldului curent al firmei în bancă și urmărirea viitoarelor plăți și încasări, împărțite pe ordine de plată (OP) și bilete la ordin (BO), automatizare prin importul de fișiere CSV din extrasele băncii.
+ - Implementarea unui sistem de gestionare a bugetelor (BO), implementarea unui sistem de reminder la începutul fiecărei săptămâni, indiferent dacă firma trebuie să încaseze sau să plătească, cu posibilitatea de a seta și monitoriza limitele de cheltuieli pentru fiecare lună (Notificări și avertizări pentru a preveni depășirea bugetului stabilit.)
+
+
+4. Modificari Website (120 de Ore * 2 Programatori):
+
+● Optimizare web la nivel de experiență a utilizatorului:
+
+- Implementarea unui design care se adaptează la toate dispozitivele, asigurând o experiență uniformă pentru utilizatori indiferent de dispozitivul folosit.
+- Utilizarea tehnologiilor de caching și a serviciilor de livrare a conținutului pentru îmbunătățirea vitezei de încărcare.
+
+● Integrare Sistem de Urmărire Client:
+
+- Integrarea API-ului Klaviyo sau TheMarketer pentru urmărirea produselor rămase în coșul de cumpărături pentru un interval specific de zile, identificând astfel potențialele achiziții neterminate.
+- Configurarea unui sistem automat de trimitere a e-mailurilor personalizate către clienți după un anumit interval de timp, notificându-i cu privire la produsele rămase în coș.
+
+● Sincronizare Comandă și Status cu ERP:
+
+- Implementarea unei integrări eficiente cu sistemul ERP pentru a sincroniza automat comenzile și a actualiza în timp real statusul acestora.
+
+
+III. Sugestii suplimentare: 
+
+● Logistica: Flotă Proprie de Import și Livrare (100 de Ore * 2 Programatori):
+
+- Secțiune pentru monitorizarea și gestionarea flotei proprii de vehicule destinate importului și livrării.
+- Detalii complete privind vehiculele, inclusiv statusul, traseul parcurs și disponibilitatea acestora.
+- Posibilitatea de a organiza și redistribui resursele în timp real în funcție de schimbările din programul de livrare.
+- Adăugarea unui sistem de tracking în timp real pe hartă pentru șoferi, folosind GPS-ul din telefoanele acestora pentru a putea vedea unde sunt șoferii pe hartă.
+- Integrarea API-ului de la Google Maps pentru a crea rutele în mod automat: administratorii vor atribui doar șoferii pe comenzi, iar algoritmul va calcula ruta în funcție de adresele de livrare, creând o rută cu punctele cele mai apropiate pentru fiecare șofer în parte pentru a optimiza consumul de carburant și timp. 
+
+Notă: Dacă nu se dorește utilizarea API-ului de la Google Maps din motive de cost, se poate implementa un algoritm care calculează ruta de la punctul A la punctul B în linie dreaptă în aer; însă, acest algoritm poate prezenta erori de calcul a distanței, deoarece străzile pot avea curbe etc.
+
+IV. Pret și timp de implementare: 
+
+*Fiecare punct poate fi supus modificării, editării sau realizării într-un mod mai sumar, cu reducerea funcționalităților, în vederea obținerii unei costuri mai reduse.
+
+*Prețul este orientativ și nu trebuie să fie limitativ; în cazul în care bugetul beneficiarului este mai restrâns decât oferta noastră în faza de proiectare, putem identifica alternative la costuri inferioare prin integrarea unui număr redus de funcționalități.
+This document was truncated here because it was created in the Evaluation Mode. </s>

@@ -1,0 +1,127 @@
+<s>[INST] Îmi puteți descrie cum este structurat fluxul de lucru al activității dvs. de la momentul în care contactați un client până la livrarea produsului sau serviciului?
+O aplicație integrată pentru rezervarea și gestionarea curselor! Prin intermediul acestei aplicații, clienții pot efectua logarea, căuta și rezerva cu ușurință cursa dorită, iar apoi pot efectua plata biletului în mod simplu și sigur.
+
+Odată ce rezervarea este confirmată, utilizatorii au acces la toate detaliile necesare: de la informații despre șoferul desemnat și punctul de plecare până la destinația finală. Totul este sincronizat cu un calendar intuitiv, astfel încât să poți gestiona eficient programul tău de călătorii.
+Care sunt principalele obiective pentru acest sistem/software și ce probleme trebuie să rezolve?
+Sa poate face plata foarte usor, Sa poata cacuta cursele. [/INST] Această ofertă preliminară este bazată pe informațiile pe care ni le-ați furnizat. Înainte de a începe efectiv dezvoltarea și de a vă putea oferi o estimare exactă a costurilor și timpului necesar, va fi necesar să parcurgem câteva etape esențiale de planificare
+
+1. Elaborarea unei diagrame logice pentru a defini arhitectura aplicației. 
+2. Crearea unei diagrame ER pentru a structura baza de date. 
+3. Realizarea unui design inițial în Figma pentru a elimina orice ambiguitate legată de interfața grafică. 
+
+Pentru începerea etapelor de mai sus, va fi necesar să semnăm un contract de colaborare și să achitați în avans prețul acestora: 
+
+Diagrama logică și diagrama ER: X Euro + TVA 
+Proiectul în Figma: X Euro + TVA 
+Acești bani se vor scădea din prețul total de dezvoltare odată acceptată oferta fermă. 
+
+Oferta de mai jos este doar orientativă și urmărește să vă ofere o perspectivă asupra modului în care operăm și a costurilor probabile. Pentru o ofertă și un timp de implementare exact, va fi necesar să completăm etapele de planificare menționate
+
+Definiții și tehnologii folosite:
+● React:
+○ React este o bibliotecă JavaScript pentru construirea interfețelor de utilizator. Este utilizată pentru crearea unor interfețe de utilizator reactive și eficiente din punct de vedere al performanței.
+
+● Ionic:
+○ Ionic este un framework open-source pentru dezvoltarea de aplicații mobile hibride. Utilizează tehnologii web precum JavaScript/React/Angular  pentru a construi aplicații pentru platforme mobile, cum ar fi iOS și Android.
+
+● NestJS:
+○ NestJS este un framework pentru dezvoltarea de aplicații server-side cu Node.js. Este construit pe baza arhitecturii modulare și utilizează TypeScript pentru a oferi un cod bine structurat și ușor de întreținut.
+
+● Firebase:
+○ Firebase este o platformă de dezvoltare a aplicațiilor mobile. Furnizează servicii precum bază de date în timp real, autentificare, stocare și hosting, facilitând dezvoltarea rapidă și scalabilă a aplicațiilor.
+
+● MongoDB:
+○ MongoDB este un sistem de gestionare a bazelor de date NoSQL, orientat pe documente. În loc de tabele, MongoDB folosește colecții și documente JSON-like, oferind flexibilitate și scalabilitate în stocarea datelor.
+
+● API (Interfață de Programare a Aplicațiilor):
+○ API reprezintă un set de reguli și protocoale care permit comunicarea între diferite componente ale software-ului/aplicației. Este folosit pentru a permite integrarea între diferite aplicații sau servicii, facilitând schimbul de informații și funcționalități între ele.
+
+
+II. Dezvoltare de bază: 
+
+Notă: Pentru structura proiectului de bază se alocă 2 programatori pentru dezvoltarea proiectului, fiecare având o implicare de 245 ore de lucru, în total fiind 490 de ore.
+
+1. Autentificare și Înregistrare Client:
+
+● Sistem de înregistrare și autentificare ușor și prietenos.
+● Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (parolă opțională).
+
+2. Autentificare Administrator
+
+● Sistem de autentificare ușor și prietenos.
+● Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (obligatoriu).
+
+3. Sistem de Gestionare Curse:
+
+● Secțiune în care administratorul adaugă, modifică și anulează cursele. 
+
+4. Căutare Curse:
+
+● Crearea unei secțiuni dedicate pentru căutarea și filtrarea călătoriilor în funcție de:
+○ punctul de plecare și destinația finală
+○ oră și dată
+○ preț
+○ tip de vehicul
+
+5. Rezervare și Gestionare a Curselor
+
+● Dezvoltarea unui sistem de tip calendar care permite:
+○ realizarea, anularea și modificarea curselor dorite
+○ rezervarea unuia sau mai multor locuri 
+○ adăugare bagaje
+○ trimitere colete 
+
+ 
+6. Confirmarea Rezervării
+
+● Odată ce rezervarea a fost confirmată, clienții au acces la informații esențiale despre cursa lor precum:
+○ confirmarea și factura plății
+○ informații despre șofer
+○ punctul de plecare 
+○ destinația finală
+○ detalii vehicul
+
+
+7. Plată Online:
+
+- Integrare API-ului Stripe pentru plata online cu cardul.
+
+8. Facturi:
+
+	- Sistem de facturare pentru clienți prin API SmartBill sau alte soluții similare.
+
+
+III. Sugestii suplimentare:
+
+Notă: Menționăm că secțiunea de sugestii suplimentare este opțională. Pentru această secțiune se alocă 2 programatori, fiecare având o implicare de 50 ore de lucru, în total fiind 100 de ore.
+
+
+1. Asistență în Timp Real:
+
+● Implementarea unui sistem de chat în timp real pentru asistența clienților și a șoferilor în timp real în caz de probleme sau întrebări.
+
+2. Secțiune de Informare:
+
+● Sfaturi și informații despre procedurile vamale și documentele necesare pentru călătoria internațională.
+
+
+
+IV. Pret și timp de implementare: 
+
+*Fiecare punct poate fi supus modificării, editării sau realizării într-un mod mai sumar, cu reducerea funcționalităților, în vederea obținerii unei costuri mai reduse.
+
+*Prețul este orientativ și nu trebuie să fie limitativ; în cazul în care bugetul beneficiarului este mai restrâns decât oferta noastră în faza de proiectare, putem identifica alternative la costuri inferioare prin integrarea unui număr redus de funcționalități.
+
+Timp estimat de livrare: 
+- Dezvoltare de bază (245 Ore de Dezvoltare): X Euro + TVA
+
+- Dezvoltare de bază împreună sugestii suplimentare (295 Ore de Dezvoltare): X Euro + TVA
+
+Timpul de livrare este influențat de complexitatea proiectului și cerințele dumneavoastră. Vom lucra în strânsă colaborare cu dumneavoastră pentru a respecta termenele stabilite.
+
+*În cadrul actualei oferte, beneficiați de serviciile a doi programatori specializați în limbajul de programare necesar pentru proiectul dumneavoastră, un manager de proiect care va concepe și coordona proiectul, precum și un grafician responsabil de conceperea interfeței utilizatorului/aplicației. Fiecare echipă din cadrul societății noastre dispune de suportul unui mentor, responsabil de supravegherea și asistarea programatorilor. Prețul pentru această echipă este de X de euro pe oră. 
+
+Termeni de achiziție:
+​
+1. Această ofertă este strict confidențială. Veziv IT Services SRL nu oferă permisiunea de a împărtăși detalii cu terțe părți.
+2. Prețurile sunt fără TVA. </s>

@@ -1,0 +1,80 @@
+<s>[INST] Automatizare documente in ERP unde sa primeasca automat urmatorul nr de serie si sa se tina cont de firma producatoare sau client; Au licenta achizitioata de la ONEDRIVE. 2. Realizare baza de date (import excel) in 2 categorii : cumparatori si furnizori; 3. Produse : adaugate din excel cu anul de productie, cod de identificare, denumire, paametrii de calitate lot ( doresc un filtru pe acest modul) 4. Cantitate : transporta doar TONE si este de 3 feluri : cantitate efectiva, cantitate tolerate (5, 10%) si cantitate la optiunea cuiva (comparator sau furnizor) 5. Livrare conditii: - incoterms („Incoterms” reprezintă prescurtarea pentru International Commercial Terms. Publicată pentru prima dată în 1936, reprezintă de fapt un set de 11 reguli, care definesc responsabilitatea în cadrul tranzacțiilor internaționale.) - Locatie ( aici se doreste onlista principala automatizata si posibilitatea de a adauga manual ) deoarece anumiti furnizori ofera mereu transport pana intr-un punct(acelasi gen vama) de acolo revine in responsailitatea clientului 6. Perioada de livrare : aleasa fie de comparator fie de furnizor. 7. Pret: sunt de 2 feluri . Fix stabilit din perioada de negociere si semnare ctr in 3 valute RON, USD si EUR. Pret matif ( este un pret la o data certa). Adica se semneaza ctr cu pret matif din data de… 8. Termen de plata : automatizare daca clientul e din RO pt moneda ( programul sa puna automat in LEI) si selectare manuala a perioadei sau sugestii de genul 30 zile. Pt ctr negociate diverse variante in functie de produs, origine si transport. 9. Comision la partea de ctr ( pt fiecare ctr inregistrat sa se adauge comisionul perceput si din partea cui , furnizor, comparator sau ambii si agentul care se ocupa ). Sa existe posibilitatea de a face update pe fiecare ctr cu status exact de genul : documente trimis apoi document semnat. Automatizare comisioane in functie de setarile initiale cu cantitatea pe care se factureaza si moneda. 10. Raportare : pe contract, pe furnizor si pe comparator. 11. Facturi: evidenta facturi parteneri, in special pt ca facturile de la furnizori trec in registrul lor de evidente si sa poata observa cand un client a achitat. Pe cantitati, pret, valori daca cumva se poate automatiza ceva. Evidenta facturi proprii, lucreaza cu SMARTBILL dar vor schimba de la 1 Ian cu E-FACTRA. [/INST] Această ofertă preliminară este bazată pe informațiile pe care ni le-ați furnizat. Înainte de a începe efectiv dezvoltarea și de a vă putea oferi o estimare exactă a costurilor și timpului necesar, va fi necesar să parcurgem câteva etape esențiale de planificare
+
+1. Elaborarea unei diagrame logice pentru a defini arhitectura aplicației. 
+2. Crearea unei diagrame ER pentru a structura baza de date. 
+3. Realizarea unui design inițial în Figma pentru a elimina orice ambiguitate legată de interfața grafică. 
+
+Pentru începerea etapelor de mai sus, va fi necesar să semnăm un contract de colaborare și să achitați în avans prețul acestora: 
+
+Diagrama logică și diagrama ER: X Euro + TVA 
+Proiectul în Figma: X Euro + TVA 
+Acești bani se vor scădea din prețul total de dezvoltare odată acceptată oferta fermă. 
+
+Oferta de mai jos este doar orientativă și urmărește să vă ofere o perspectivă asupra modului în care operăm și a costurilor probabile. Pentru o ofertă și un timp de implementare exact, va fi necesar să completăm etapele de planificare menționate
+
+Definiții:
+- CRM (Customer Relationship Management): CRM este un acronim pentru "Customer Relationship Management" sau "Gestionarea Relațiilor cu Clienții" în română. Este o strategie și un set de tehnologii utilizate pentru a gestiona relațiile și interacțiunile cu clienții. Scopul principal al unui sistem CRM este să îmbunătățească relațiile cu clienții, să optimizeze procesele de vânzare și marketing și să ofere o mai bună experiență generală pentru clienți.
+- ERP (Enterprise Resource Planning): ERP este un acronim pentru "Enterprise Resource Planning" sau "Planificarea Resurselor Enterprise" în română. Este un sistem de software care ajută organizațiile să gestioneze și să integreze eficient toate procesele lor de afaceri, inclusiv contabilitatea, resursele umane, gestionarea stocurilor, producția, vânzările și multe altele. Scopul principal al unui sistem ERP este să faciliteze fluxurile de lucru interne și să ofere o imagine consolidată și în timp real a resurselor și proceselor organizației.
+ 
+II. Propunere structură (255 ore * 2 programatori): 
+
+1)    Dezvoltarea ERP de bază (30 ore * 2 programatori):
+ 
+a)    Dezvoltarea unui sistem ERP folosind tehnologii moderne, cum ar fi React pentru interfața utilizatorului și MongoDB/Firebase pentru baza de date.
+b)   Conectare utilizatori cu autentificare OTP prin SMS/email pentru securitate sporită.
+  
+2)    Aplicatie admin ( 225 ore * 2 programatori):
+ 
+a)    Sistem de documente (125 ore x 2 programatori):
+i)      Un sistem de generare documente automatizat bazat pe draft-uri, fiecare cu un status propriu, cu o indentare automată a seriei pentru optimizarea timpului de lucru.
+Notă: Acest sistem vă permite să creați orice tip de document sau aviz prin intermediul Google Docs (o aplicație online gratuită lansată de Google, similară programului Word). În Google Docs se creează primul șablon. Acest sistem poate fi folosit pentru a genera mai multe tipuri de documente, cum ar fi contracte, acte adiționale, etc. În momentul generării unui document sau aviz, se vor putea lega datele salvate din profilul clienților, precum și datele salvate despre produse, pentru a genera documentul pe baza șablonului salvat în sistem. Acest sistem, după crearea șabloanelor, este util pentru toate documentele/avizele care trebuie generate periodic pentru clienți/produse diferite, doar printr-un clic.
+
+ii)    Sistem de adăugare clienți/furnizori în platformă și de a crea profilul clientului/furnizorului, unde se poate vedea istoricul, următoarele plăți și contractele generate în baza draftului, cu statusuri pentru fiecare contract/act. Legare API ANAF pentru a culege datele în mod automat din baza de date dacă clientul/furnizorul este o firmă din România.
+
+iii)    Diverse tipuri de documente disponibile și campuri personalizate (ex: comision, tip de pret, termen de plata, moneda, etc.).
+
+iv)   Sistem de monitorizare a facturilor proprii și de la parteneri.
+
+v)   Istoric al comenzilor, cu toate informațiile relevante pentru comenzi.
+ 
+b)    Monitorizarea produselor (68 ore * 2 programatori):
+i)      Sistem de adaugare, stergere, modificare și filtrare a produselor cu diverse campuri personalizate unde este cazul (ex: cantitate maxima/minima, livrare in anuite locatii, perioada de livrare etc.).
+ii)   Sistem de calcul automat, în baza contractelor, a cantității și a monedei (RON, USD, EUR), cu conversiile din EURO în RON și din USD în RON, în baza cursului valutar actual de la BRD.
+ 
+c)    Sistem de rapoarte (24 ore * 2 programatori):
+i)      Sistem de rapoarte pentru furnizori, clienti si contracte care masoara diferiti parametri relevanti si pune la dispozitie informatii importante într-o interfata intuitiva.
+
+d)    Sistem de facturare (8 ore * 2 programatori):
+i)      Legare API de SmartBill sau alt soft de facturare pentru a genera facturile ușor și pentru a le trimite către E-Factura (SmartBill are integrată trimiterea facturilor către SPV E-Factura pentru toate facturile prin apăsarea unui buton).
+
+III. Sugestii suplimentare (35 Ore - 2 Programatori ):
+a)    Sistem de import/export csv (20 Ore - 2 Programatori)
+i)      Sistem de import și export al datelor din platformă prin CSV. Acest sistem este util pentru a putea importa mai ușor clienți/produse deja existenți sau pentru a exporta CSV-uri.
+
+b)    Semnătura electronică (15 Ore - 2 Programatori)
+i)      Integrare API pentru semnătura electronică. Se va trimite către client un link împreună cu contractul, unde clientul/furnizorul va putea să semneze actul cu semnătura electronică (semnătura electronică este recunoscută la nivel mondial).
+
+c)    Aplicație client (35 Ore - 2 Programatori)
+i)      Clienții vor avea posibilitatea de a se conecta la aplicație și de a vizualiza doar anumite informații legate de contul propriu. Vom dezvolta un sistem de permisiuni și grade, unde fiecărui utilizator îi vor fi atribuite în mod automat sau manual anumite permisiuni/grade. Accesul la informații va fi determinat de permisiunile/gradul acordat.
+ 
+IV. Pret și timp de implementare: 
+
+*Fiecare punct poate fi supus modificării, editării sau realizării într-un mod mai sumar, cu reducerea funcționalităților, în vederea obținerii unei costuri mai reduse.
+
+*Prețul este orientativ și nu trebuie să fie limitativ; în cazul în care bugetul beneficiarului este mai restrâns decât oferta noastră în faza de proiectare, putem identifica alternative la costuri inferioare prin integrarea unui număr redus de funcționalități.
+
+ Timp estimat de livrare:
+
+- Dezvoltarea de bază și Aplicatie admin.  (255 Ore cu 2 Programatori): X Euro + TVA
+
+- Dezvoltarea de bază și Aplicatie admin, inclusiv integrarea sugestiilor suplimentare. (255 Ore + 60 Ore cu 2 Programatori): X Euro + TVA
+
+Timpul de livrare este influențat de complexitatea proiectului și cerințele dumneavoastră. Vom lucra în strânsă colaborare cu dumneavoastră pentru a respecta termenele stabilite.
+
+
+*În cadrul actualei oferte, beneficiați de serviciile a doi programatori specializați în limbajul de programare necesar pentru proiectul dumneavoastră, un manager de proiect care va concepe și coordona proiectul, precum și un grafician responsabil de conceperea interfeței utilizatorului/aplicației. Fiecare echipă din cadrul societății noastre dispune de suportul unui mentor, responsabil de supravegherea și asistarea programatorilor. Prețul pentru această echipă este de X de euro pe oră.
+
+Termeni de achiziție:
+​
+1. Această ofertă este strict confidențială. Veziv IT Services SRL nu oferă permisiunea de a împărtăși detalii cu terțe părți.
+2. Prețurile sunt fără TVA. </s>

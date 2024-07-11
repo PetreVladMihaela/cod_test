@@ -1,0 +1,117 @@
+<s>[INST] Doresc să digitalizeze procesele lor de afaceri și să implementeze un program care să-i ajute să gestioneze rutele, stocul, arhivele furnizorilor, arhivele școlilor și arhivele produselor. 1. Gestiunea rutelor: • Capacitatea de a crea și gestiona rute pentru șoferi 2. Gestiunea stocului: • Capacitatea de a urmări stocul de lapte și corn școlar • Capacitatea de a urmări istoricul vânzărilor 3.Arhive furnizori: • Capacitatea de a stoca informații despre furnizori, cum ar fi numele, adresa, numărul de telefon și datele de contact • Capacitatea de a urmări istoricul comenzilor cu furnizorii 4. Arhive școli: • Capacitatea de a stoca informații despre școli, cum ar fi numele, adresa, numărul de telefon și datele de contact ale directorului • Capacitatea de a urmări istoricul livrărilor către școli 5.Arhive produse: • Capacitatea de a stoca informații despre produse, cum ar fi numele, codul, descrierea • Capacitatea de a urmări istoricul vânzărilor pe produse 6. Avize: • Capacitatea de a genera avize de intrare, avize de corecție și avize de ieșire • Capacitatea de a personaliza aspectul avizelor • Capacitatea de a imprima avize pe imprimante matriceale Programul nu trebuie corelat cu un alt software. In momentul de față își desfășoară activitatea cu ajutorul excelurilor. Orice se poate automatiza sau sugera ca ușurare a muncii actuale e binevenita. [/INST] Această ofertă preliminară este bazată pe informațiile pe care ni le-ați furnizat. Înainte de a începe efectiv dezvoltarea și de a vă putea oferi o estimare exactă a costurilor și timpului necesar, va fi necesar să parcurgem câteva etape esențiale de planificare
+
+1. Elaborarea unei diagrame logice pentru a defini arhitectura aplicației. 
+2. Crearea unei diagrame ER pentru a structura baza de date. 
+3. Realizarea unui design inițial în Figma pentru a elimina orice ambiguitate legată de interfața grafică. 
+
+Pentru începerea etapelor de mai sus, va fi necesar să semnăm un contract de colaborare și să achitați în avans prețul acestora: 
+
+Diagrama logică și diagrama ER: X Euro + TVA 
+Proiectul în Figma: X Euro + TVA 
+Acești bani se vor scădea din prețul total de dezvoltare odată acceptată oferta fermă. 
+
+Oferta de mai jos este doar orientativă și urmărește să vă ofere o perspectivă asupra modului în care operăm și a costurilor probabile. Pentru o ofertă și un timp de implementare exact, va fi necesar să completăm etapele de planificare menționate
+
+Definiții:
+- CRM (Customer Relationship Management): CRM este un acronim pentru "Customer Relationship Management" sau "Gestionarea Relațiilor cu Clienții" în română. Este o strategie și un set de tehnologii utilizate pentru a gestiona relațiile și interacțiunile cu clienții. Scopul principal al unui sistem CRM este să îmbunătățească relațiile cu clienții, să optimizeze procesele de vânzare și marketing și să ofere o mai bună experiență generală pentru clienți.
+- ERP (Enterprise Resource Planning): ERP este un acronim pentru "Enterprise Resource Planning" sau "Planificarea Resurselor Enterprise" în română. Este un sistem de software care ajută organizațiile să gestioneze și să integreze eficient toate procesele lor de afaceri, inclusiv contabilitatea, resursele umane, gestionarea stocurilor, producția, vânzările și multe altele. Scopul principal al unui sistem ERP este să faciliteze fluxurile de lucru interne și să ofere o imagine consolidată și în timp real a resurselor și proceselor organizației.
+
+II. Propunere structurii minime (295 Ore - 2 Programatori): 
+1. Dezvoltarea CRM de bază:
+a. Dezvoltarea unui sistem CRM folosind tehnologii moderne, cum ar fi React pentru interfața utilizatorului și MongoDB/Firebase pentru baza de date.
+b. Conectare utilizatori bazată pe roluri cu autentificare OTP prin SMS/email pentru securitate sporită.
+2. Sistem de Permisiuni:
+a. Dezvoltarea unui sistem de permisiuni pentru atribuirea rolurilor și permisiunilor de utilizare, cu scopul de a limita accesul și funcționalitățile pentru fiecare utilizator în parte.
+
+3. Sistem de Adăugare Produse:
+a. Posibilitatea de a crea produse nelimitate, cu stocarea informațiilor precum nume, cod, EAN (dacă este cazul), preț și stoc la momentul creării produselor.
+4. Sistem de adăugare Furnizori în aplicație:
+a. Crearea de profile pentru furnizori, cu setarea informațiilor relevante, cum ar fi nume, adresă, număr de telefon și datele de contact pentru facturare.
+
+5. Gestiunea Stocului:
+a. Capacitatea de a monitoriza stocul, cu notificări atunci când acesta se apropie de epuizare.
+
+6. Sistem de Adăugare Clienți în Aplicație:
+a. Crearea de profile pentru școli cu setarea informațiilor relevante cum ar fi nume, adresă, număr de telefon și datele de contact pentru facturare și livrare.
+b. Capacitatea de a urmări istoricul livrărilor către școli.
+
+7. Sistem de Comenzi:
+a. Crearea de comenzi programate pentru fiecare client, cu un sistem de statusuri și tracking pentru livrarea comenzilor către clienți.
+b. Capacitatea de a urmări istoricul vânzărilor.
+
+8. Sistem de Generare Avize:
+a. Generarea avizelor cu un șablon creat de noi pentru imprimantele matriciale.
+
+9. Secțiune pentru Șoferi și Livrări:
+a. Administratorii și utilizatorii cu permisiunile adecvate vor crea rute și vor atribui șoferilor comenzi în funcție de capacitatea mașinii folosite.
+Șoferii vor avea posibilitatea de a schimba statusul fiecărei comenzi și de a vedea toate comenzile atribuite lor în fiecare zi, având acces și la profilul clienților cu date relevante, precum numele școlilor și adresele acestora.
+
+II. Propunere structuri avansate (390 Ore - 2 Programatori): 
+10. Dezvoltarea CRM de bază:
+a. Dezvoltarea unui sistem CRM folosind tehnologii moderne, cum ar fi React pentru interfața utilizatorului și MongoDB/Firebase pentru baza de date.
+b. Conectare utilizatori bazată pe roluri cu autentificare OTP prin SMS/email pentru securitate sporită.
+11. Sistem de Permisiuni:
+a. Dezvoltarea unui sistem de permisiuni pentru atribuirea rolurilor și permisiunilor de utilizare, cu scopul de a limita accesul și funcționalitățile pentru fiecare utilizator în parte.
+
+12. Sistem de Adăugare Produse:
+a. Posibilitatea de a crea produse nelimitate, cu stocarea informațiilor precum nume, cod, EAN (dacă este cazul), preț și stoc la momentul creării produselor.
+13. Sistem de adăugare Furnizori în aplicație:
+a. Crearea de profile pentru furnizori, cu setarea informațiilor relevante, cum ar fi nume, adresă, număr de telefon și datele de contact pentru facturare.
+b. Capacitatea de a lega produsele de furnizori pentru a facilita căutarea furnizorilor atunci când stocurile se epuizează.
+c. Posibilitatea de a stoca și șterge fișiere de tip PDF, imagini sau alte formate în profilul furnizorilor.
+
+14. Gestiunea Stocului:
+a. Capacitatea de a monitoriza stocul, cu notificări atunci când acesta se apropie de epuizare. (În notificări se va indica furnizorul căruia va trebui să i se facă cerere pentru noi stocuri.)
+
+15. Sistem de Adăugare Clienți în Aplicație:
+a. Crearea de profile pentru școli, persoane fizice sau juridice, cu setarea informațiilor relevante cum ar fi nume, adresă, număr de telefon și datele de contact pentru facturare și livrare.
+b. Capacitatea de a urmări istoricul livrărilor către clienți (școli sau alte firme/cliști).
+c. Posibilitatea de a stoca și șterge fișiere de tip PDF, imagine sau alte formate în profilul clienților.
+
+16. Sistem de Comenzi:
+a. Crearea de comenzi programate pentru fiecare client, cu un sistem de statusuri și tracking pentru livrarea comenzilor către clienți.
+b. Capacitatea de a urmări istoricul vânzărilor.
+
+17. Sistem de Generare Avize:
+a. Crearea de șabloane pentru avize/documente prin intermediul API-ului de la Google Docs.
+b. Generarea avizelor și documentelor cu șabloanele selectate de către utilizator în format .doc sau .pdf, urmate de posibilitatea de a le imprima pe imprimante.
+
+Notă: Acest sistem vă permite să creați orice tip de document sau aviz prin intermediul Google Docs (o aplicație online gratuită lansată de Google, similară programului Word).
+În Google Docs se creează primul șablon cu dimensiunea foilor pentru a putea fi utilizat cu imprimantele matriciale. Acest sistem poate fi folosit pentru a genera mai multe tipuri de documente, cum ar fi contracte, acte adiționale, etc. În momentul generării unui document sau aviz, se vor putea lega datele salvate din profilul clienților, precum și datele salvate despre produse, pentru a genera documentul pe baza șablonului salvat în sistem.
+Acest sistem, după crearea șabloanelor, este util pentru toate documentele/avizele care trebuie generate periodic pentru clienți/produse diferite, doar printr-un clic.
+
+
+18. Secțiune pentru Șoferi și Livrări:
+a. Administratorii și utilizatorii cu permisiunile adecvate vor crea rute și vor atribui șoferilor comenzi în funcție de capacitatea mașinii folosite.
+Șoferii vor avea posibilitatea de a schimba statusul fiecărei comenzi și de a vedea toate comenzile atribuite lor în fiecare zi, având acces și la profilul clienților cu date relevante, precum numele școlilor și adresele acestora.
+
+
+III. Sugestii suplimentare (150 Ore - 2 Programatori ):
+1. Adăugarea unui sistem de tracking în timp real pe hartă pentru șoferi, folosind GPS-ul din telefoanele acestora pentru a putea vedea unde sunt șoferii pe hartă.
+
+2. Integrarea API-ului de la Google Maps pentru a crea rutele în mod automat: administratorii vor atribui doar șoferii pe comenzi, iar algoritmul va calcula ruta în funcție de adresele școlilor, creând o rută cu punctele cele mai apropiate pentru fiecare șofer în parte pentru a optimiza consumul de carburant și timp. 
+Dacă nu se dorește utilizarea API-ului de la Google Maps din motive de cost, se poate implementa un algoritm care calculează ruta de la punctul A la punctul B în linie dreaptă în aer; însă, acest algoritm poate prezenta erori de calcul a distanței, deoarece străzile pot avea curbe etc.
+
+IV. Pret și timp de implementare: 
+
+*Fiecare punct poate fi supus modificării, editării sau realizării într-un mod mai sumar, cu reducerea funcționalităților, în vederea obținerii unei costuri mai reduse.
+
+*Prețul este orientativ și nu trebuie să fie limitativ; în cazul în care bugetul beneficiarului este mai restrâns decât oferta noastră în faza de proiectare, putem identifica alternative la costuri inferioare prin integrarea unui număr redus de funcționalități.
+
+Timp estimat de livrare: 
+
+- Dezvoltarea structurii minime.  (295 Ore cu 2 Programatori): X Euro + TVA
+
+- Dezvoltarea unei structuri avansate.  (390 Ore cu 2 Programatori): X Euro + TVA
+
+- Dezvoltarea unei structuri avansate, inclusiv integrarea sugestiilor suplimentare. (540 Ore + 150 Ore cu 2 Programatori): X Euro + TVA
+
+Timpul de livrare este influențat de complexitatea proiectului și cerințele dumneavoastră. Vom lucra în strânsă colaborare cu dumneavoastră pentru a respecta termenele stabilite.
+
+
+*În cadrul actualei oferte, beneficiați de serviciile a doi programatori specializați în limbajul de programare necesar pentru proiectul dumneavoastră, un manager de proiect care va concepe și coordona proiectul, precum și un grafician responsabil de conceperea interfeței utilizatorului/aplicației. Fiecare echipă din cadrul societății noastre dispune de suportul unui mentor, responsabil de supravegherea și asistarea programatorilor. Prețul pentru această echipă este de x de euro pe oră. În săptămâna 13-19 noiembrie 2023, vă putem oferi un discount, reducând tariful de la X euro pe oră la X euro pe oră, având în vedere că aceasta este săptămâna Black Friday.
+
+Termeni de achiziție:
+​
+1. Această ofertă este strict confidențială. Veziv IT Services SRL nu oferă permisiunea de a împărtăși detalii cu terțe părți.
+2. Prețurile sunt fără TVA. </s>
