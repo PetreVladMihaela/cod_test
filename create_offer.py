@@ -1,6 +1,7 @@
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 import torch
+import argparse
 
 
 def offer(prompt: str):
@@ -22,6 +23,16 @@ def offer(prompt: str):
     model = PeftModel.from_pretrained(model_reload, "llm-offers")
     model = model.merge_and_unload()
 
+    pipe = pipeline(task="text-generation", model=model, tokenizer=tokenizer)
+    result = pipe(f"<s>[INST] {prompt} [/INST]", max_new_tokens=5000, do_sample=True, temperature=0.5, top_p=0.5, top_k=10)
+    return result[0]['generated_text']
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--prompt')
+    args = vars(parser.parse_args())
+    print(offer(args["prompt"]))
     pipe = pipeline(task="text-generation", model=model, tokenizer=tokenizer)
     result = pipe(f"<s>[INST] {prompt} [/INST]", max_new_tokens=5000, do_sample=True, temperature=0.5, top_p=0.5, top_k=10)
     return result[0]['generated_text']
